@@ -36,4 +36,4 @@ const ProjectSchema = new Schema({
         timestamps: true
     })
 
-module.exports = mongoose.model('test-uptrade-project', ProjectSchema)
+module.exports = mongoose.model('uptrade-project', ProjectSchema)

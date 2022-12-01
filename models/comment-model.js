@@ -22,4 +22,4 @@ const CommentSchema = new Schema({
     timestamps: true
 })
 
-module.exports = mongoose.model('test-uptrade-comments', CommentSchema)
+module.exports = mongoose.model('uptrade-comments', CommentSchema)

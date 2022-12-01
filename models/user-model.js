@@ -31,6 +31,6 @@ const UserSchema = new Schema({
     }
 })
 
-const User = mongoose.model('test-uptrade-user', UserSchema)
+const User = mongoose.model('uptrade-user', UserSchema)
 
 module.exports = User

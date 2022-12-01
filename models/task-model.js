@@ -67,4 +67,4 @@ const TaskSchema = new Schema({
         timestamps: true
     })
 
-module.exports = mongoose.model('test-uptrade-task', TaskSchema)
+module.exports = mongoose.model('uptrade-task', TaskSchema)
