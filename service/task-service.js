@@ -2,7 +2,7 @@ const projectModel = require("../models/project-model")
 const taskModel = require("../models/task-model")
 
 class TaskService {
-    async getTasks(queue, development, done, val, searchType) {
+    async getTasks(queue, development, done, val = '', searchType = '') {
         const taskIds = [...queue, ...development, ...done]
         const props = {
             '_id': {

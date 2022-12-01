@@ -7,4 +7,4 @@ const TokenSchema = new Schema({
     refreshToken:   { type: String,  require: true }
 })
 
-module.exports = mongoose.model('uptrade-token', TokenSchema)
+module.exports = mongoose.model('test-uptrade-token', TokenSchema)

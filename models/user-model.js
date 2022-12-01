@@ -26,11 +26,11 @@ const UserSchema = new Schema({
                 type: String,
             }
         }],
-        
+
         default: []
-}
+    }
 })
 
-const User = mongoose.model('uptrade-user', UserSchema)
+const User = mongoose.model('test-uptrade-user', UserSchema)
 
 module.exports = User

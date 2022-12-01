@@ -55,10 +55,16 @@ const TaskSchema = new Schema({
                 default: false
             }
         }]
+    },
+    comments: {
+        type: [{
+            type: String
+        }],
+        default: []
     }
 },
     {
         timestamps: true
     })
 
-module.exports = mongoose.model('uptrade-task', TaskSchema)
+module.exports = mongoose.model('test-uptrade-task', TaskSchema)

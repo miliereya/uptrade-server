@@ -19,9 +19,7 @@ class ProjectService {
             throw ApiError.NoProjectOnRequest()
         }
         const { queue, development, done } = project
-        let val = ''
-        let searchType = ''
-        const tasks = await taskService.getTasks(queue, development, done, val, searchType)
+        const tasks = await taskService.getTasks(queue, development, done)
         return { tasks, project }
     }
 
