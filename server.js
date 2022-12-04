@@ -12,8 +12,8 @@ const app = express()
 const port = process.env.PORT || 5000
 
 app.use(cors({
-    credentials: true,
-    origin: process.env.CLIENT_URL
+    origin: '*',
+    credentials: true
 }))
 app.use(express.json())
 app.use(cookieParser())
@@ -25,7 +25,7 @@ const uri = process.env.ATLAS_URI
 
 const start = async () => {
     try {
-        await mongoose.connect(uri, { 
+        await mongoose.connect(uri, {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
