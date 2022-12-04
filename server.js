@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
 const router = require('./routes/index')
 const errorMiddleware = require('./middlewares/error-middleware')
+const { json } = require('express')
 
 //config
 require('dotenv').config()
@@ -19,6 +20,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use('/api', router)
 app.use('/public', express.static('public'))
+app.use('/', json('it works'))
 app.use(errorMiddleware)
 
 const uri = process.env.ATLAS_URI
