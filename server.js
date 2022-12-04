@@ -20,7 +20,6 @@ app.use(express.json())
 app.use(cookieParser())
 app.use('/api', router)
 app.use('/public', express.static('public'))
-app.use('/', json('it works'))
 app.use(errorMiddleware)
 
 const uri = process.env.ATLAS_URI
